@@ -79,9 +79,9 @@ logo:"/image/logo EURL BOUFRADJI MOSTEFA.png" ,
 const profile = () => {
   return (
     <div>
-      <section className="py-16 px-6 bg-gray-50">
+      <section id="experience" className="py-16 px-6 bg-gray-50">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-8">
+        <h2 className="text-[40px] md:text-[48px] font-semibold text-gray-900 mb-8">
           Professional Experience
         </h2>
 

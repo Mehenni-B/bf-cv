@@ -16,21 +16,25 @@ const hero = () => {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <a
-            href="#experience"
+          <button
+             onClick={() =>
+             document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
+                     }
             className="bg-[#004AAD] hover:bg-blue-800 text-white px-6 py-3 rounded-lg flex items-center space-x-2 font-medium"
           >
             <span>View Experience</span>
             {<ArrowRight size={18} />}
-          </a>
+          </button>
 
-          <a
-            href="#contact"
+          <button
+             onClick={() =>
+             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                     }
             className="border border-[#004AAD] text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-lg flex items-center space-x-2 font-medium"
           >
             <span>Contact Me</span>
             <Mail size={18} />
-          </a>
+          </button>
         </div>
       </div>
 
