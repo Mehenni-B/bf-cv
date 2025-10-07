@@ -6,7 +6,7 @@ const contact = () => {
     <div>
       <section className="flex flex-col items-center justify-center py-16 px-4 bg-white">
       {/* Title */}
-      <h2 className="text-2xl font-semibold text-gray-900 mb-2">Get In Touch</h2>
+      <h2 className="text-[40px] font-semibold text-gray-900 mb-2">Get In Touch</h2>
       <p className="text-gray-500 text-center max-w-md mb-10">
         Let’s discuss how we can work together to drive strategic growth and operational excellence.
       </p>
