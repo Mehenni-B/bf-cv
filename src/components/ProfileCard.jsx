@@ -22,7 +22,7 @@ const ProfileCard = ({
   return (
     <div className="flex flex-col border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition">
       {/* Top Row: Logo + Basic Info + Button */}
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-between items-start gap-4 border border-gray-200 rounded-xl p-5 bg-white shadow-sm hover:shadow-md transition relative">
         {/* Left Section */}
         <div className="flex gap-4 items-start">
           <img
@@ -62,18 +62,22 @@ const ProfileCard = ({
 
         {/* Right Section */}
         <div className="flex flex-col items-end gap-2 min-w-[120px]">
-          <button
-            onClick={() => setShowDetails(!showDetails)}
-            className=" text-gray-500 hover:underline text-sm font-medium flex items-center gap-1"
-          >
-            {showDetails ? "Hide Details" : "Show Details"}
-            {showDetails ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-          </button>
-          <div className="flex items-center text-sm text-gray-500">
-            <Calendar className="w-4 h-4 mr-2" />
-            {start} – {end}
-          </div>
-        </div>
+        {(core_activities || secondary_activities) && (
+    <button
+      onClick={() => setShowDetails(!showDetails)}
+      className={`text-sm font-medium flex items-center gap-1 hover:underline transition-colors duration-200
+        ${showDetails ? "text-[#004AAD]" : "text-gray-500"}`}
+    >
+      {showDetails ? "Show Details" : "Show Details"}
+      {showDetails ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+    </button>
+  )}
+
+  <div className="flex items-center text-sm text-gray-500">
+    <Calendar className="w-4 h-4 mr-2" />
+    {start} – {end}
+  </div>
+      </div>
       </div>
 
       {/* Bottom Collapsible Section */}

@@ -12,12 +12,14 @@ const header = () => {
 
 
       <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
-        <li><a href="#home" className="hover:text-blue-700">Home</a></li>
-        <li><a href="#experience" className="hover:text-blue-700">Experience</a></li>
-        <li><a href="#contact" className="hover:text-blue-700">Contact</a></li>
+        <li><a href="#home" className="hover:text-[#004AAD]">Home</a></li>
+        <li><a href="#experience" className="hover:text-[#004AAD]">Experience</a></li>
+        <li><a href="#contact" className="hover:text-[#004AAD]">Contact</a></li>
       </ul>
 
-      <button className="bg-[#004AAD] hover:bg-[#003C8A] text-white px-5 py-2 rounded-lg flex items-center space-x-1 text-sm font-medium transition-colors">
+      <button   onClick={() =>
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }className="bg-[#004AAD] hover:bg-[#003C8A] text-white px-5 py-2 rounded-lg flex items-center space-x-1 text-sm font-medium transition-colors">
   <span>Let’s Connect</span>
   <ArrowUpRight size={16} />
 </button>

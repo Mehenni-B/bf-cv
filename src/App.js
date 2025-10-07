@@ -7,7 +7,7 @@ import Footer from "./components/footer" ;
 import Profile from "./components/profile" ;
 function App() {
   return (
-    <div className="font-sans text-gray-900 bg-white">
+    <div className="font-sans text-gray-900 bg-white scroll-smooth container mx-auto px-6">
       <Header/>
       <Hero/>
       <Profile/>
