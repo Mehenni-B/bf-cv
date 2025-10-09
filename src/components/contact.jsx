@@ -39,7 +39,7 @@ const contact = () => {
            <MapPin className="text-[#004AAD] w-5 h-5 mr-3" />
           <div>
             <p className="text-sm text-gray-500">Location</p>
-            <p className="text-gray-800">Algiers (chlef)</p>
+            <p className="text-gray-800">Algiers-chlef</p>
           </div>
         </div>
 
