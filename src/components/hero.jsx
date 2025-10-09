@@ -40,7 +40,7 @@ const hero = () => {
 
       {/* Image Placeholder */}
      
-        <img className="mt-12 md:mt-0 md:w-[420px] h-[420px] rounded-md"  src="/image/WhatsApp Image 2025-10-07 à 19.08.33_5fb796a0.jpg" alt="" />
+        <img className="mt-12 md:mt-0 md:w-[420px] h-[420px] rounded-md"  src="/image/WhatsApp Image 2025-10-09 à 15.02.58_8e4dd775.jpg" alt="" />
     </section>
     </div>
   )
