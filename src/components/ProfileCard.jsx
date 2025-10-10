@@ -24,15 +24,28 @@ const ProfileCard = ({
   {/* Top Row: Logo + Basic Info + Button */}
   <div className="flex flex-col md:flex-row justify-between items-start gap-4 relative">
     {/* Left Section */}
+   
+   <div className="flex flex-col gap-4 items-start">
     <div className="flex gap-4 items-start">
-      <img
-        src={logo}
-        alt={company}
-        className="w-16 h-16 object-contain rounded-lg border"
-      />
+        <div>
+          <img
+          src={logo}
+          alt={company}
+          className="w-16 h-16 object-contain rounded-lg border"/>
+        </div>
       <div>
-        <h3 className="text-lg font-semibold text-gray-900">{company}</h3>
-        <p className="text-sm text-gray-600 mb-2">{position}</p>
+         <h3 className="text-lg font-semibold text-gray-900">{company}</h3>
+         <p className="text-sm text-gray-600 mb-2">{position}</p>
+      </div>
+    </div>
+
+
+
+
+      <div className="flex gap-4 items-start">
+        <div className="  md:w-16 ">
+
+        </div>
 
         <div className="text-sm text-gray-700 leading-relaxed space-y-1">
           <p><strong>Company Name:</strong> {company_name}</p>
@@ -44,7 +57,12 @@ const ProfileCard = ({
           <p><strong>Main Business Sector:</strong> {main_buisness_sector}</p>
         </div>
       </div>
+    
     </div>
+
+
+
+
 
     {/* Right Section */}
     <div className="flex flex-col items-end gap-2 min-w-[120px]">
