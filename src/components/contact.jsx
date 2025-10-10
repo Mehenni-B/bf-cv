@@ -13,6 +13,7 @@ const contact = () => {
 
       {/* Card */}
       <div id="contact" className="bg-gray-50 shadow-sm rounded-xl w-full max-w-md p-6">
+        
         {/* Email */}
         <div className="flex items-center border border-gray-200 rounded-lg px-4 py-3 mb-3 bg-white">
            <Mail className="text-[#004AAD] w-5 h-5 mr-3" />
@@ -39,7 +40,7 @@ const contact = () => {
            <MapPin className="text-[#004AAD] w-5 h-5 mr-3" />
           <div>
             <p className="text-sm text-gray-500">Location</p>
-            <p className="text-gray-800">Algiers-chlef</p>
+            <p className="text-gray-800">Algeria-chlef</p>
           </div>
         </div>
 
